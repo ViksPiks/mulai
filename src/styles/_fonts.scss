@@ -1,0 +1,29 @@
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    src: url($furl) format("woff2");
+  }
+}
+
+@include font(
+  "poppins-regular",
+  normal,
+  400,
+  "../assets/fonts/poppins-regular.woff2"
+);
+
+@include font(
+  "poppins-medium",
+  normal,
+  500,
+  "../assets/fonts/poppins-medium.woff2"
+);
+
+@include font(
+  "poppins-semi-bold",
+  normal,
+  600,
+  "../assets/fonts/poppins-semi-bold.woff2"
+);

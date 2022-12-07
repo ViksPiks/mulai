@@ -1,0 +1,52 @@
+@use "../components/button/button";
+@use "../components/product-card/product-card";
+
+.jumbotron {
+  display: flex;
+  background-image: url("../assets/images/jumbotron.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: calc(100vh - 72px);
+
+  &-capture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    h1 {
+      font-size: 24px;
+      color: #fff;
+      font-family: poppins-semi-bold, sans-serif;
+      letter-spacing: -0.41px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.catalog {
+  padding: 30px 0;
+
+  h2 {
+    letter-spacing: -0.41px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @media (min-width: 600px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 1000px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

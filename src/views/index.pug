@@ -1,1 +1,24 @@
 extends layout.pug
+include ../components/button/button.pug
+include ../components/product-card/product-card.pug
+
+block head
+  link(rel="stylesheet", href="index.scss")
+
+block main
+  section.jumbotron
+    .container
+      .jumbotron-capture
+        h1 Fall Winter 2023
+        +button("Shop Now")
+
+  section.catalog
+    .container
+      h2 New Arrivals
+      .products
+        +product-card("../assets/images/dress-1.jpg", "Black Cady Mini Dress", "#", "€150")
+        +product-card("../assets/images/dress-2.jpg", "Black Cady Mini Dress", "#", "€150")
+        +product-card("../assets/images/dress-3.jpg", "Black Cady Mini Dress", "#", "€150")
+        +product-card("../assets/images/dress-4.jpg", "Black Cady Mini Dress", "#", "€150")
+        +product-card("../assets/images/dress-5.jpg", "Black Cady Mini Dress", "#", "€150")
+        +product-card("../assets/images/dress-6.jpg", "Black Cady Mini Dress", "#", "€150")

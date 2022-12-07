@@ -1,0 +1,5 @@
+mixin product-card(imgUrl, title, productLink, price)
+  .product-card
+    img.product-image(src=imgUrl, alt="dress")
+    a.product-title(href=productLink)= title
+    span.product-price= price

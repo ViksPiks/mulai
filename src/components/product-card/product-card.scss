@@ -1,0 +1,26 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0 10;
+
+  .product-image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 17px;
+  }
+
+  .product-title {
+    flex: 1;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: -0.41px;
+    text-align: center;
+  }
+
+  .product-price {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.41px;
+    text-align: center;
+  }
+}

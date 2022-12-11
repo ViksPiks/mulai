@@ -1,0 +1,41 @@
+extends layout.pug
+include ../components/button/button.pug
+
+block head
+  link(rel="stylesheet", href="product.scss")
+
+block main
+  section.product
+    .container
+      .product-img
+        img(src="../assets/images/dress-1.jpg", alt="dress")
+      .product-description
+        h2 Black Cady Mini Dress
+        span.product-price € 150
+
+        ul.size-list
+          li XS
+            input.six(type="radio", name="size-select", value="XS")
+          li S
+          li M
+          li L
+        button.size-btn
+          svg(width="25px", height="25px")
+            use(href="../assets/svg/measuring-tape.svg#tape")
+          | Size Guide
+
+      +button("Add To Bag")
+
+      .accordeons
+        .accordeon
+          span Composition
+          button.accordeon-btn
+            svg(width="11px", height="6px")
+              use(href="../assets/svg/arrow.svg#arrow")
+        .accordeon
+          span Size &amp; Fit
+          button.accordeon-btn
+            svg(width="11px", height="6px")
+              use(href="../assets/svg/arrow.svg#arrow")
+
+      a.contact-us-btn(href="#") Contact Us

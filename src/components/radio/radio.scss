@@ -1,0 +1,30 @@
+.custom-radio {
+  display: block;
+  height: 29px;
+  width: 46px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+
+  & input {
+    display: none;
+  }
+
+  .size {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #c1c1c1;
+    transition: all 0.2s ease-out;
+  }
+
+  &:hover input ~ .size {
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+  }
+
+  & input:checked ~ .size {
+    border: 1px solid #000;
+  }
+}

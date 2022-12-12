@@ -1,4 +1,5 @@
 @use "../components/button/button";
+@use "../components/input/input";
 
 .contact-us {
   padding: 15px 0 30px;
@@ -22,17 +23,6 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-
-    input {
-      border: 1px solid #dadada;
-      width: 100%;
-      height: 40px;
-      color: #545454;
-      font-size: 14px;
-      font-family: poppins-regular, sans-serif;
-      letter-spacing: -0.41px;
-      padding: 8px 15px;
-    }
 
     textarea {
       resize: none;

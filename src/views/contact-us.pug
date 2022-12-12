@@ -1,5 +1,6 @@
 extends layout.pug
 include ../components/button/button.pug
+include ../components/input/input.pug
 
 block head
   link(rel="stylesheet", href="contact-us.scss")
@@ -11,7 +12,8 @@ block main
       p We are here to help and answer any question you might have. Fill out the form and we will be in touch as soon as possible.
 
       form
-        input(type="text", name="name", placeholder="Name")
-        input(type="email", name="email", placeholder="Email Address")
+        +input("text", "name", "Name")
+        +input("email", "email", "Email Address")
+
         textarea(name="message", cols="30", rows="10", placeholder="Message")
         +button("Send", "submit")

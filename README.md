@@ -1,5 +1,7 @@
 # Mulai
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1c531505-6582-4d36-880a-13aeb5680056/deploy-status)](https://app.netlify.com/sites/inquisitive-marigold-1efa35/deploys)
+
 ## Summary
 
 - [How to run the project](#how-to-run-the-project)

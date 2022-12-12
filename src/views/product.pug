@@ -1,5 +1,6 @@
 extends layout.pug
 include ../components/button/button.pug
+include ../components/radio/radio.pug
 
 block head
   link(rel="stylesheet", href="product.scss")
@@ -9,16 +10,19 @@ block main
     .container
       .product-img
         img(src="../assets/images/dress-1.jpg", alt="dress")
+      .radio-btns
+        input(type="radio", name="product-slide", value="1", checked)
+        input(type="radio", name="product-slide", value="2")
+        input(type="radio", name="product-slide", value="3")
+        input(type="radio", name="product-slide", value="4")
       .product-description
         h2 Black Cady Mini Dress
         span.product-price € 150
 
         ul.size-list
-          li XS
-            input.six(type="radio", name="size-select", value="XS")
-          li S
-          li M
-          li L
+          each val in ["XS", "S", "M", "L"]
+            li
+              +radio(val)
         button.size-btn
           svg(width="25px", height="25px")
             use(href="../assets/svg/measuring-tape.svg#tape")

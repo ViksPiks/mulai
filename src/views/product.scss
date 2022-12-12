@@ -1,10 +1,23 @@
 @use "../components/button/button";
+@use "../components/radio/radio";
 
 .product {
+  padding: 20px 0 30px;
+
   .product-img {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+  }
+
+  .radio-btns {
+    text-align: center;
+    margin-bottom: 20px;
+
+    input {
+      height: 7px;
+      width: 7px;
+    }
   }
 
   .product-description {
@@ -29,36 +42,6 @@
       display: flex;
       gap: 20px;
       margin-bottom: 10px;
-
-      li {
-        border: 0.5px solid #979797;
-        display: flex;
-        justify-content: center;
-        width: 46px;
-        font-size: 18px;
-
-        & :focus {
-          border: 1px solid #000;
-        }
-
-        .six {
-          display: none;
-          padding: 0.1rem 0.3rem;
-          border: 1px solid red;
-          background-color: #fff;
-          position: absolute;
-          top: 1rem;
-          right: 1rem;
-
-          label {
-            display: block;
-            position: relative;
-            margin: 0.67rem;
-            padding: 0.67rem;
-            background-color: #ffe;
-          }
-        }
-      }
     }
 
     .size-btn {
@@ -72,11 +55,13 @@
       line-height: 24px;
       text-decoration: underline 1px;
       text-underline-position: under;
+      cursor: pointer;
     }
   }
 
   .btn {
     width: 100%;
+    margin-bottom: 30px;
   }
 
   .accordeons {
@@ -95,7 +80,6 @@
 
       span {
         font-size: 13px;
-        display: block;
       }
 
       &-btn {

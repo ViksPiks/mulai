@@ -1,0 +1,19 @@
+extends layout.pug
+
+block head
+  link(rel="stylesheet", href="shipping.scss")
+
+block main
+  section.shipping
+    .container
+      h1 shipping &amp; Delivery
+      .accordeon-capture
+        |
+        .accordeon
+          span.servise Customer Services
+          button.plus-btn
+            svg(width="10px", height="10px")
+              use(href="../assets/svg/plus.svg#plus")
+      h2 Shipping Cost
+      span Same Day Delivery: €21
+      p Available for Greater London only. Orders must be placed before 1:30pm BST Mon-Fri for delivery by 7pm same day. Orders placed after 1:30pm GMT will be delivered by next day noon (12pm).

@@ -1,0 +1,7 @@
+mixin accordion(title, links)
+  .accordion
+    button.open-btn
+      span.title= title
+    .content
+      each link in links
+        a(href=link.href)= link.text

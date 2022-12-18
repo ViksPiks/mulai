@@ -1,0 +1,63 @@
+.accordion {
+  border-bottom: 1px solid #979797;
+
+  .open-btn {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+    transition: height 0.4s;
+
+    &::after {
+      content: "\002B";
+      color: #777;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+
+    &.active::after {
+      content: "\2212";
+    }
+
+    &.active,
+    &:hover {
+      background-color: #ccc;
+    }
+
+    .title {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #545454;
+    }
+  }
+
+  .content {
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 0 15px;
+
+    a {
+      font-size: 11px;
+      text-transform: capitalize;
+      color: #545454;
+
+      &:first-child {
+        margin-top: 10px;
+      }
+
+      &:last-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

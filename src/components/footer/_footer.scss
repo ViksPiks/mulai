@@ -1,3 +1,5 @@
+@use "../accordion/accordion";
+
 .main-footer {
   background-color: #fbfbfb;
   padding: 14px 0 33px;
@@ -6,29 +8,8 @@
     margin-bottom: 30px;
 
     .accordeon {
-      border-bottom: 1px solid #979797;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 9px;
-
       &:not(:last-child) {
         margin-bottom: 14px;
-      }
-
-      span {
-        font-size: 12px;
-        text-transform: uppercase;
-        color: #545454;
-      }
-
-      .plus-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
-        background-color: transparent;
-        padding: 5px;
       }
     }
   }

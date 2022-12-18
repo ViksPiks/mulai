@@ -1,16 +1,16 @@
+include ../accordion/accordion.pug
+
+- var links = [
+- { href: "shipping.pug", text: "Shipping & Delivery" },
+- { href: "return-exchange.pug", text: "Returns & Exchanges" },
+- { href: "faq.pug", text: "FAQ" }
+- ];
+
 footer.main-footer
   .container
     .accordeons
-      .accordeon
-        span Customer Services
-        button.plus-btn
-          svg(width="10px", height="10px")
-            use(href="../assets/svg/plus.svg#plus")
-      .accordeon
-        span Help &amp; Support
-        button.plus-btn
-          svg(width="10px", height="10px")
-            use(href="../assets/svg/plus.svg#plus")
+      +accordion("Customer Services", links)
+      +accordion("Help & Support", links)
     span.stay-in-touch Stay in touch
     .social-icons
       a(href="#")

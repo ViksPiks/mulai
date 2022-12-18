@@ -1,0 +1,50 @@
+@use "../components/input/input";
+
+.faq {
+  padding-bottom: 50px;
+
+  h1 {
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .input-capture {
+    padding: 0 20px;
+    margin-bottom: 20px;
+
+    .input {
+      border: none;
+      background-color: #fbfbfb;
+      color: #858484;
+      text-transform: capitalize;
+      font-size: 12px;
+    }
+  }
+
+  .accordeons {
+    .accordeon {
+      border-bottom: 1px solid #979797;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 9px;
+
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
+
+      span {
+        font-size: 13px;
+      }
+
+      &-btn {
+        border: none;
+        background-color: transparent;
+        padding: 10px;
+      }
+    }
+  }
+}

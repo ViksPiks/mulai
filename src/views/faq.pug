@@ -1,0 +1,23 @@
+extends layout.pug
+include ../components/input/input.pug
+
+block head
+  link(rel="stylesheet", href="faq.scss")
+
+block main
+  section.faq
+    .container
+      h1 Faq
+      .input-capture
+        +input("search", "search", "type key word to find answers")
+      .accordeons
+        .accordeon
+          span Can I cancel or amend any of my order details?
+          button.accordeon-btn
+            svg(width="11px", height="6px")
+              use(href="../assets/svg/arrow.svg#arrow")
+        .accordeon
+          span Can I cancel or amend any of my order details?
+          button.accordeon-btn
+            svg(width="11px", height="6px")
+              use(href="../assets/svg/arrow.svg#arrow")

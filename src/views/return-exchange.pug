@@ -1,0 +1,26 @@
+extends layout.pug
+
+block head
+  link(rel="stylesheet", href="return-exchange.scss")
+
+block main
+  section.return-exchange
+    .container
+      h1 Returns &amp; Exchanges
+      .accordeon-capture
+        .accordeon
+          span.servise Customer Services
+          button.plus-btn
+            svg(width="10px", height="10px")
+              use(href="../assets/svg/plus.svg#plus")
+      h2 Returns
+      p Mulai accepts returns and exchanges if you are not 100% happy with
+        | your purchase.
+      span CONDITIONS FOR RETURNS:
+      ol
+        li Items must be returned within 14 days of original date of shipment.
+        li All original tags must remain attached.
+        li Items must be unworn and returned in original condition.
+      p We can only exchange items for a different size in the same style and colour, subject to availability. If the requested size is not available, you will be offered a refund, pending eligibility. We reserves the right to reject items that do not comply with the above conditions and will return the item to sender.
+        |
+        | For all RA requests, please email our Customer Care team at <a href = "mailto: mulai@gmail.com">mulai@gmail.com</a>

@@ -8,18 +8,18 @@
 - [How to use SASS](#how-to-use-sass)
 - [How to use Pug](#how-to-use-pug)
 
-## How to run the project <a href="how-to-run-the-project"></a>
+## How to run the project
 
 ```bash
 npm install
 npm run start
 ```
 
-## How to use SASS <a href="how-to-use-sass"></a>
+## How to use SASS
 
 - [SASS documentation](https://sass-lang.com/documentation/)
 
-## How to use Pug <a href="how-to-use-pug"></a>
+## How to use Pug
 
 - [Pug documentation](https://pugjs.org/api/getting-started.html)
 
